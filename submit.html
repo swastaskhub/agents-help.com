@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Task</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Submit Your Task</h2>
+
+    <!-- File Upload -->
+    <div class="upload-box">
+        <label for="fileInput">📎 Attach File</label>
+        <input type="file" id="fileInput">
+    </div>
+
+    <!-- Submit Button -->
+    <button onclick="openPayment()">✅ Submit Task</button>
+</div>
+
+<!-- Payment Popup -->
+<div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <h3>Select Payment Method</h3>
+
+        <select id="paymentMethod">
+            <option value="mpesa" selected>M-Pesa</option>
+            <option value="kcb">KCB Bank</option>
+            <option value="paypal">PayPal</option>
+            <option value="applepay">Apple Pay</option>
+        </select>
+
+        <button onclick="confirmPayment()">Confirm</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

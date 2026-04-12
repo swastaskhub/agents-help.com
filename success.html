@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submission Successful</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="success-box">
+    <h1>✅ Submission Successful</h1>
+    <p id="message"></p>
+
+    <a href="index.html" class="btn">Back to Dashboard</a>
+</div>
+
+<script>
+let phone = localStorage.getItem("mpesaNumber");
+
+document.getElementById("message").innerText =
+"Await payment through your M-Pesa number: " + phone;
+</script>
+
+</body>
+</html>
