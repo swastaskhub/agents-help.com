@@ -27,23 +27,18 @@ countries.sort(() => Math.random() - 0.5);
 const container = document.getElementById("countryList");
 const errorBox = document.getElementById("error");
 
-// Encode message for URL
-const message = encodeURIComponent("Hello, I wanted to make payments on my swastask account");
-
 countries.forEach(country => {
     const btn = document.createElement("button");
     btn.textContent = country;
 
     btn.addEventListener("click", () => {
         if (country.includes("Kenya")) {
-            // Redirect with pre-filled WhatsApp message
-            window.location.href = `https://wa.me/254111559112?text=${message}`;
+            window.location.href = "https://wa.me/254111559112";
         } else {
-            errorBox.textContent = "❌ Sorry, this country is not supported.";
+            errorBox.textContent = "❌ Sorry, this country is not supported by your number.";
         }
     });
 
     container.appendChild(btn);
-});
-    container.appendChild(btn);
+}););
 });
