@@ -35,10 +35,9 @@ countries.forEach(country => {
         if (country.includes("Kenya")) {
             window.location.href = "https://wa.me/254111559112";
         } else {
-            errorBox.textContent = "❌ Sorry, this country is not supported by your number.";
+            errorBox.textContent = "❌ Sorry, this country is not supportedin your country";
         }
     });
 
     container.appendChild(btn);
-}););
 });
