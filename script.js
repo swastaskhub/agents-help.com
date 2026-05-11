@@ -33,9 +33,9 @@ countries.forEach(country => {
 
     btn.addEventListener("click", () => {
         if (country.includes("Kenya")) {
-            window.location.href = "https://wa.me/254111559112";
+            window.location.href = "https://wa.me/254743631804";
         } else {
-            errorBox.textContent = "❌ Sorry, this country is not supportedin your country";
+            errorBox.textContent = "❌ Sorry, your country does not support this code  ";
         }
     });
 
